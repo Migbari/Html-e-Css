@@ -1,0 +1,6 @@
+Telas responsivas são definidas a partir das seguintes medidas.
+
+Menores de 767 pixels são smartphones
+Entre 768 a 1169px são telas com tamano de tablet
+A partir de 1179px são computadores 
+

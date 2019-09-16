@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    width: 320px;                                   /*espaçamento menu*/
+    justify-content: space-between;     
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.menu a:hover, .ativo{
+    color: #dddddd;                                 /*ativo não recebe*/  /*.menu .ativo, a:hover=recebe todos*/ 
+    transition: 200ms;                                /*ativo não recebe*/
+    border-bottom: 2px solid #dddddd;
+    padding-bottom: 5px;
+}
+header{
+    background-color: #FF0909;
+}
+nav{
+    width: 1366px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;   
+}
+.banner{
+    width: 1366px;
+    margin: auto;
+    position: relative;
+}
+.texto_banner{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+}
+.texto_banner .t1{
+    font-family: 'Times New Roman';
+    font-size: 40px;
+}
+.texto_banner .t2{
+    font-family: Arial;
+    font-size: 30px;
+}
+.texto_banner p{
+    margin-bottom: 20px;
+    font-family: Arial;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.card{
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.0;
+    margin-top: 60px;
+}
+.card p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.btn{                                                  /*or card a*/    
+    background-color: #FF0909;
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none; 
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+.btn:hover{
+    color: #FF0909;
+    background-color: #DDDDDD;
+    border: 2px dashed #FF0909;
+}
+footer{
+    background-color: #FF0909;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+/*Media Queries Tablet*/
+@media (max-width:1169px){
+    nav{
+        width: 768px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .banner{
+        width: 768px;
+    }
+    .texto_banner .t1{
+        font-size: 22px;
+    }
+    .texto_banner .t2{
+        font-size: 12px;
+    }
+    .container{
+        width: 720px;
+    }
+}
+/*Media Queries SmartPhone*/
+@media (max-width:767px){
+    nav{
+        width: 368px;
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        width: 150px;
+        padding-top: 10px;
+    }
+    .menu li{
+        padding-top: 10px;
+    }
+    .banner{
+        width: 368px;
+    }
+    .banner img{
+        display: none;
+    }
+    .texto_banner{
+        color: black;
+        position: static;
+        text-align: left;
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+    .container{
+      width: 350px;
+    }
+}
