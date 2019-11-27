@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; /*Comportemento Uls*/
+    text-align: center;
+}
+ul li{
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    opacity: .8;
+    line-height: 40px;
+    font-size: 20px;
+    margin-right: 2px;
+}
+ul li ul{ /*Afeta os sub-itens*/
+    display: flex;
+    flex-direction: column;
+}
+/*None*/
+ul li a{
+    display: block;
+}
+ul li a:hover{
+    background-color: green;
+}
+ul li ul li{ /*Afeta os sub-itens*/
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+@media(max-width: 769px){
+    ul{
+      flex-direction: column;
+      
+    }
+    ul li{
+        margin-bottom: 0.5px;
+        width: 100%;
+        height: 45px;
+    }
+}

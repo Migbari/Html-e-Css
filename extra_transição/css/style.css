@@ -1,0 +1,43 @@
+.container{
+    width: 1200px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 245, 245);
+}
+.imagem{
+    height: 200px;
+    width: 350px;
+    background: url(../img/navegadores.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.imagem:hover{
+    background-size: 120%;
+}
+
+.zoomtransition{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 350px; 
+    height: 200px;
+    background-image: url(../img/navegadores.jpg);
+    background-size: 100%;
+    background-position: center; /*Direção do zoom do centro para fora*/
+  
+    /* transition: background-size 1s ease-in;
+    -moz-transition: background-size 1s ease-in;
+    -ms-transition: background-size 1s ease-in;
+    -o-transition: background-size 1s ease-in; */
+    -webkit-transition: background-size 3s ease-out;
+  }
+  
+  .zoomtransition:hover{
+  background-size: 120%
+  }
